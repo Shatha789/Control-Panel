@@ -17,7 +17,7 @@ if($conn->connect_error){
 
   if(isset($_POST['save'])){
 
-  $stmt = $conn->prepare("insert into sliders_1(sl1,sl2, sl3, sl4, sl5, sl6)
+  $stmt = $conn->prepare("insert into robot(Motive1,Motive2, Motive3, Motive4, Motive5, Motive6)
   values(?,?,?,?,?,?)");
   $stmt->bind_param("iiiiii",$ro1,$ro2,$ro3,$ro4,$ro5,$ro6);
   $stmt->execute();
