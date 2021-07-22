@@ -10,7 +10,7 @@ $dbname = "robot";
 
   $conn= mysqli_connect($servername, $username, $password,$dbname);
 
-  $insert="insert into sliders_1 values(1)";
+  $insert="insert into robot values(1)";
 }
 
 
