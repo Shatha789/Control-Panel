@@ -21,7 +21,7 @@ if($conn->connect_error){
   values(?,?,?,?,?,?)");
   $stmt->bind_param("iiiiii",$ro1,$ro2,$ro3,$ro4,$ro5,$ro6);
   $stmt->execute();
-  echo "Save successfully........";
+  echo "Save successfully";
   $stmt->close();
   $conn->close();
 }
